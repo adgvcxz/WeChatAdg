@@ -1,2 +1,2 @@
 # WeChatAdg
-学习Xposed 顺带做点微信相关
+利用Xposed去防止微信撤回消息 针对6.5.4版本
