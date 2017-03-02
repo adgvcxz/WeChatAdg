@@ -10,7 +10,7 @@ class WeChatFactory {
     companion object {
         val V654 = "6.5.4"
 
-        fun create(version: String): IWeChat? {
+        fun create(version: String): WeChat? {
             when (version) {
                 V654 -> {
                     return WeChat654()
