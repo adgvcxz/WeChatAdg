@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">WechatExtension</string>
+    <string name="wechat_revoke_setting">微信撤回设置</string>
+    <string name="revoke_my_message">是否撤销自己的消息</string>
 </resources>

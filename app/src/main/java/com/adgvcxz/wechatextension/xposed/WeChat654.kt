@@ -9,7 +9,10 @@ package com.adgvcxz.wechatextension.xposed
 
 class WeChat654 : WeChat() {
 
-    override var HookRecallClass = "com.tencent.mm.sdk.platformtools.bg"
-    override var HookRecallMethod = "q"
+//    override var HookRecallClass = "com.tencent.mm.sdk.platformtools.bg"
+//    override var HookRecallMethod = "q"
+//
+//    override var HookDatabaseClass = "com.tencent.mm.storage.t"
+//    override var HookDatabaseParams = "com.tencent.mm.bg.g"
 
 }
