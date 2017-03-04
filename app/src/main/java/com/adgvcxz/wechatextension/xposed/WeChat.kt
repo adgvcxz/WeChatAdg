@@ -3,7 +3,6 @@ package com.adgvcxz.wechatextension.xposed
 import de.robv.android.xposed.XC_MethodHook
 import de.robv.android.xposed.XposedBridge
 import de.robv.android.xposed.XposedHelpers
-import java.util.*
 
 /**
  * zhaowei
@@ -93,5 +92,8 @@ abstract class WeChat {
         }
     }
 
-    private fun isRevoke(sql: String) = sql.contains("type=$RecallMessageType") && sql.contains("UPDATE message SET content=")
+    private fun isRevoke(sql: String): Boolean {
+        val upCase = sql.toUpperCase()
+        return upCase.contains("TYPE=$RecallMessageType") && upCase.contains("UPDATE MESSAGE SET CONTENT=") && (!upCase.contains("CONTENT=你") && !upCase.contains("CONTENT=YOU"))
+    }
 }
